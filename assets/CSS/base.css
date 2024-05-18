@@ -10,6 +10,7 @@
     --mainFont: "Poppins", sans-serif;
     --subFont: "Inter", sans-serif;
     --mainColor: #545BE8 ;
+    --subColor: #fff;
 }
 body{
     font-family: var(--mainFont);
@@ -23,6 +24,17 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.logo img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
 }
 a{
     text-decoration: none;

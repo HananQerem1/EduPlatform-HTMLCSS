@@ -1,18 +1,11 @@
 @import './base.css';
+/* Start navbar */
 header{
     position: sticky;
     top: 0;
     padding: 20px 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-}
-header .logo{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-header .logo img{
-    width: 40px;
 }
 header .logo a{
     color: var(--mainColor);
@@ -43,10 +36,81 @@ header .auth a:first-of-type{
 header .auth a:last-of-type{
     width: 70px;
     background: var(--mainColor);
-    color: #ffffff;
+    color: var(--subColor);
 }
 @media (max-width:1160px) {
     .nav{
         display: none;
     }
 }
+/* End navbar */
+
+/*Start footer */
+footer{
+    background-color: #393E46;
+    color: var(--subColor);
+    height: 250px;
+    padding: 40px 0px;
+}
+footer a{
+    color: var(--subColor);
+}
+.footer .row{
+    gap: 90px;
+}
+.footer-start,.footer-end{
+    width: calc((100% - 90px) / 2);
+}
+.footer-start{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer-start p{
+    font-weight: 290;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+}
+.footer-start ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.footer-start svg{
+    width: 15px;
+    height: 15px;
+    fill: var(--subColor);
+    border: 1px solid var(--subColor);
+    padding: 6px;
+    box-sizing: content-box;
+}
+.footer-start li:first-of-type:hover svg,.footer-start li:nth-of-type(2):hover svg,.footer-start li:nth-of-type(3):hover svg{
+    background-color: #0866ff;
+    border-radius: 5px;
+}
+.footer-start li:last-of-type:hover svg{
+    background: linear-gradient(to left,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    border-radius: 5px;
+}
+.footer-end .row {
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.footer-end .footer-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-end .footer-item ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-end .footer-item ul a{
+    font-weight: 290;
+}
+/* End footer */
