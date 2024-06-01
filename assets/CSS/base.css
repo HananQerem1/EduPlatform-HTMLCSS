@@ -24,6 +24,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 .column{
     display: flex;
@@ -51,3 +52,4 @@ ul{
 .active{
     font-weight: 700;
 }
+
