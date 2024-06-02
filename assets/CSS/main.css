@@ -87,7 +87,7 @@ header .auth a:last-of-type{
     font-size: 30px;
     font-weight: 700;
 }
-.registeration .register-details .register-buttom a{
+.registeration .register-details .register-button a{
     background-color: var(--mainColor);
     color: var(--subColor);
     width: fit-content;
@@ -101,11 +101,11 @@ header .auth a:last-of-type{
     justify-content: left;
     gap: 20px;
 }
-.registeration .register-form .video-buttom .row {
+.registeration .register-form .video-button .row {
     align-items: flex-start;
     gap: 8px;
 }
-.registeration .register-form .video-buttom a{
+.registeration .register-form .video-button a{
     color: #000;
 }
 .registeration .picture{
@@ -115,7 +115,9 @@ header .auth a:last-of-type{
     .registeration .register-details, .registeration .picture{
         width: 100%;
     }
-    .registeration .row {
+    .registeration .picture{
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
     .registeration .register-details{
@@ -533,15 +535,32 @@ footer a{
     }
     .footer-end{
         width: 100%;
-        margin-top: 30px;
+        padding-top: 30px;
     }
     .footer-item {
         width: calc ( (100% - 30px) / 4 );
     }
 }
 @media(max-width:760px) {
+    .footer-end .footer-item{
+        width: calc( (100% - 30px ) / 2 );
+    }
     .footer-end .row{
-        gap: 100px;
+        column-gap: 0px;
+        row-gap: 75px;
+    }
+    .footer-end .footer-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:550px){
+    .footer-end .footer-item{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 /* End footer */
