@@ -435,10 +435,9 @@ header .auth a:last-of-type{
     text-align: left;
     color: #646464;
 }
-@media (max-width: 660px){
+@media (max-width: 745px){
     .testimonials-card{
-        width: calc( 100% - 30px );
-
+        width: 100%;
     }
 }
 @media (max-width:550px){
